@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Préstamos</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <header>
+        <img src="https://zetafmdigital.com.ar/wp-content/uploads/2024/08/prestamos.jpg" alt="" width="300px">
+    </header>
+    <main>
+    <h1>Simulador de Préstamos</h1>
+    <form id="info">
+        <label for="monto">Monto del préstamo:</label>
+        <input type="number" id="monto" required>
+        <br>
+        <label for="cuotas">Número de cuotas:</label>
+        <select id="cuotas" required>
+            <option value="1">1 cuota</option>
+            <option value="3">3 cuotas</option>
+            <option value="6">6 cuotas</option>
+            <option value="9">9 cuotas</option>
+            <option value="12">12 cuotas</option>
+        </select>
+        <br>
+        <button id="calcular">Calcular</button>
+    </form>
+    <div id="resultado"></div>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="./JavaSc/main.js"></script>
+</body>
+</html>
