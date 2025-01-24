@@ -32,10 +32,10 @@ function mostrarResultado(monto, cuotas, interes, cuotaMensual) {
     e.preventDefault();
     const monto = parseFloat(document.getElementById('monto').value);
     const cuotas = parseInt(document.getElementById('cuotas').value);
-  
+  // Condicional. Si el monto es inferior a 100000 no deja seleccionar 9 o 12 cuotas
     if ((cuotas === 9 || cuotas === 12) && monto < 100000) {
       resultado.innerHTML = `
-        <p style="color: red;">Para seleccionar 9 o 12 cuotas, el monto debe ser mayor o igual a $100,000.</p>
+        <p>Para seleccionar 9 o 12 cuotas, el monto debe ser mayor o igual a $100,000.</p>
       `;
       return;
     }
