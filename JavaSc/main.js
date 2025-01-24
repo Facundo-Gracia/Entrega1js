@@ -27,4 +27,21 @@ function mostrarResultado(monto, cuotas, interes, cuotaMensual) {
     <p>Interés: ${interes * 100}%</p>
     <p>Cuota mensual: $${cuotaMensual}</p>
   `;
+
+  info.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const monto = parseFloat(document.getElementById('monto').value);
+    const cuotas = parseInt(document.getElementById('cuotas').value);
+  
+    if ((cuotas === 9 || cuotas === 12) && monto < 100000) {
+      resultado.innerHTML = `
+        <p style="color: red;">Para seleccionar 9 o 12 cuotas, el monto debe ser mayor o igual a $100,000.</p>
+      `;
+      return;
+    }
+  
+    const interes = intereses[cuotas] || 0;
+    const cuotaMensual = ((monto * (1 + interes)) / cuotas).toFixed(2);
+    mostrarResultado(monto, cuotas, interes, cuotaMensual);
+  });
 }
