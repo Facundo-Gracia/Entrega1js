@@ -1,0 +1,139 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.card{
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+}
+.item-carrito{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+#contenedor-productos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.card{
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.card img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.floating-btn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content{
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+}
+.close{
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+}
+.mensaje-oculto{
+    display: none;
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.degrades {
+    text-align: center;
+    background: linear-gradient(to right, #4caf50, #2e7d32); /* Degradado verde */
+    padding: 50px;
+    color: white;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.desgrades h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.degrades p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.degrades button {
+    background: white;
+    color: #2e7d32;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.degrades button:hover {
+    background: #c8e6c9;
+}
+.info-adicional {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 800px;
+    background: white;
+    color: #2e7d32;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.info-adicional h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+.info-adicional p {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    line-height: 1.5;
+}

@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "nombre": "Té Negro Clásico",
+        "descripcion": "Un té negro intenso con aroma profundo.",
+        "precio": 1000,
+        "imagen": "./assets/te-darjeeling.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Té Verde",
+        "descripcion": "Té verde fresco con propiedades antioxidantes.",
+        "precio": 950,
+        "imagen": "./assets/te-verde-gunpowder.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Té de Frutas",
+        "descripcion": "Mezcla frutal con hibisco y frutos rojos.",
+        "precio": 1100,
+        "imagen": "./assets/te-english.jpg"
+    },{
+        "id": 1,
+        "nombre": "Té de Jazmin",
+        "descripcion": "Un té verde con un aroma suave.",
+        "precio": 1300,
+        "imagen": "./assets/te-jazmin.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Té Verde Matcha",
+        "descripcion": "Té verde match fresco con un fuerte sabor.",
+        "precio": 1600,
+        "imagen": "./assets/te-verde-matcha.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Té Rojo",
+        "descripcion": "Mezcla frutal de frutos rojos y te.",
+        "precio": 1350,
+        "imagen": "./assets/te-rooibos.jpg"
+    }
+    
+]

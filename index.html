@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce de Té</title>
+    <link rel="stylesheet" href="style/style.css">
+    <!-- Librerías externas -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Establecimiento San Jorge</h1>        
+        </nav>
+    </header>
+
+    <main>
+        <section id="seccion-productos" class="degrades">
+            <h2>Bienvenido</h2>
+            <h3>Descubre la mejor selección de tés de calidad premium.</h3>
+            <button id="ver-productos">Ver Productos</button>
+        
+            <!-- Información extra-->
+            <section class="info-adicional">
+                <h3>¿Por qué elegir Establecimiento San Jorge?</h3>
+                <p>Seleccionamos los mejores tés para brindarte una experiencia única. Desde clásicos intensos hasta mezclas aromáticas, cada taza es un momento de placer y bienestar.</p>
+                <p>Nuestro establecimiento se encuentra en <strong>San Pedro, Misiones</strong>, donde contamos con chacras y secaderos propios. Producimos tés de manera natural, respetando cada proceso para garantizar la mejor calidad.</p>
+                <p>Disfruta del sabor auténtico y los beneficios naturales de nuestras infusiones.</p>
+            </section>
+        </section>
+
+        <!-- Botón carrito -->
+        <button id="btn-carrito" class="floating-btn">🛒 Carrito (<span id="contador-carrito">0</span>)</button>
+
+        <!-- Productos -->
+        <div id="contenedor-productos"></div>        
+
+        <!-- Modal del carrito -->
+        <div id="carrito-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>🛒 Tu Carrito</h2>
+                <ul id="lista-carrito"></ul>
+                <p>Total: $<span id="total-carrito">0</span></p>
+                <button id="vaciar-carrito">Vaciar Carrito</button>
+                <button id="finalizar-compra">Finalizar Compra</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Establecimiento San Jorge</p>
+    </footer>
+
+    <!-- Scripts del proyecto -->
+    <script src="js/index.js"></script>
+    <script src="js/carrito.js"></script>
+</body>
+</html>
